@@ -1,0 +1,25 @@
+name: Jira automation
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  jira:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v4
+        with:
+          python-version: "3.9"
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Run Jira script
+        run: python liaison_intergalactique.py
+        env:
+          JIRA_EMAIL: ${{ secrets.JIRA_EMAIL }}
+          JIRA_TOKEN: ${{ secrets.JIRA_TOKEN }}
