@@ -85,3 +85,4 @@ Merci VSCode, merci GitHub, merci Jira.
 
 Test GitHub Actions Jira
 Lien Jira EDT-8
+Déploiement Jira EDT-8
