@@ -82,3 +82,4 @@ Un projet inutile est souvent le plus stable.
 Merci VSCode, merci GitHub, merci Jira.
 
 🚀 Fin de transmission.
+
