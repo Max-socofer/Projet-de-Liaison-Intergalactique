@@ -84,3 +84,4 @@ Merci VSCode, merci GitHub, merci Jira.
 🚀 Fin de transmission.
 
 Test GitHub Actions Jira
+Lien Jira EDT-8
