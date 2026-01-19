@@ -1,4 +1,4 @@
-name: Deploy to development
+name: Deploy to staging
 
 on:
   push:
@@ -9,11 +9,8 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
 
-    environment: development
+    environment: staging
 
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Fake deploy
-        run: echo "Déploiement DEV pour Jira"
+      - uses: actions/checkout@v4
+      - run: echo "Déploiement STAGING pour Jira"
