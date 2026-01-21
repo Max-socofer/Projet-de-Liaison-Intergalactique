@@ -22,4 +22,3 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - run: echo "Déploiement PRODUCTION pour Jira"
-
